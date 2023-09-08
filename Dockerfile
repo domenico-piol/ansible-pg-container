@@ -6,6 +6,8 @@ RUN dnf check-update; \
 #    dnf install -y python3-pip; \
     dnf install -y wget; \
     dnf install -y postgresql; \
+    dnf -y install buildah; \
+    dnf -y install skopeo; \
     dnf clean all
 
 RUN pip3 install --upgrade pip; \
